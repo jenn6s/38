@@ -1,0 +1,70 @@
+/* ✅ Centralized External Stylesheet (Linked in HTML) */
+
+body {
+    font-family: Arial, sans-serif; /* ✅ font-family */
+    color: #ffffff; /* ✅ color */
+    margin: 0; /* ✅ margin */
+    padding: 0; /* ✅ padding */
+}
+
+header {
+    background-color: #0073e6; /* ✅ color */
+    color: rgb(63, 159, 255);
+    text-align: center;
+    padding: 20px; /* ✅ padding */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px; /* ✅ margin */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(83, 172, 213);
+    font-weight: bold;
+}
+
+main {
+    padding: 20px; /* ✅ padding */
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro img {
+    border-radius: 10px; /* ✅ sizing (border-radius) */
+    width: 100%; /* ✅ sizing */
+    max-width: 300px;
+}
+
+#coolSection {
+    background-color: #5fc4ff; /* ✅ color */
+    padding: 20px; /* ✅ padding */
+    margin: 20px 0; /* ✅ margin */
+}
+
+footer {
+    background-color: #333; /* ✅ color */
+    color: rgb(60, 178, 251);
+    text-align: center;
+    padding: 10px; /* ✅ padding */
+}
+
+/* ✅ 7+ CSS Selectors Used:
+   - body
+   - header
+   - nav ul
+   - nav ul li
+   - nav ul li a
+   - main
+   - .intro img
+   - #coolSection
+   - footer
+*/
