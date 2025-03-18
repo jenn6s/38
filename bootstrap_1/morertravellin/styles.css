@@ -4,13 +4,13 @@ body {
     color: #D1C6B1; /* Soft beige for text */
     margin: 0;
     padding: 0;
-    background-color: #F1F1F1; /* Lighter background for contrast */
+    background-color: #ebd8be; /* Dark gray background */
 }
 
 /* ✅ Header */
 header {
-    background-color: #2F1F1E !important; /* Dark brownish header (added !important to override Bootstrap) */
-    color: #F1F1F1; /* Light cream for text */
+    background-color: #e8b6b3; /* Dark brownish shade for the header */
+    color: #575448; /* Light cream for text */
     padding: 20px;
 }
 
@@ -19,7 +19,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-top: 40px; /* Increase the margin-top to create space below the button */
+    margin-top: 40px; /* Added space between the boxes and the header */
 }
 
 .bento-item {
@@ -34,20 +34,15 @@ header {
 }
 
 /* ✅ Intro Section */
-.intro {
-    margin-bottom: 30px; /* Create more space below the button */
-    position: relative;
-}
-
 .intro img {
     border-radius: 12px;
     max-width: 300px;
     width: 100%;
-    position: absolute;
-    top: 20px; /* Adjust image to the top below the header */
-    right: 10px; /* Position it on the right side */
-    filter: brightness(0.85); /* Slightly darken the image */
+    filter: brightness(0.8); /* Slightly darken the image */
+    margin-top: 30px; /* Increased space above the image */
 }
+
+
 
 /* ✅ Cropped Image */
 .cropped-image {
