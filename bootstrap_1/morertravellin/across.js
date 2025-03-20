@@ -24,11 +24,15 @@ if (isSunny && hasTickets) {
 
 // ✅ dom manipulation (output to browser)
 document.addEventListener("DOMContentLoaded", function() {
+    // Ensure everything is loaded before manipulating the DOM
     let section = document.getElementById("coolSection");
-    let newParagraph = document.createElement("p");
-    newParagraph.textContent = `Your daily budget for ${destination} is $${dailyBudget.toFixed(2)}.`;
-    section.appendChild(newParagraph);
+    if (section) {
+        let newParagraph = document.createElement("p");
+        newParagraph.textContent = `Your daily budget for ${destination} is $${dailyBudget.toFixed(2)}.`;
+        section.appendChild(newParagraph);
+    }
 });
+
 
 // ✅ console log output
 console.log("hello freakbobs 👅👅👅");

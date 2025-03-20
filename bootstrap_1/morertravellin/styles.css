@@ -1,17 +1,39 @@
 /* ✅ General Styles */
 body {
     font-family: 'Times New Roman', serif;
-    color: #D1C6B1; /* Soft beige for text */
+    color: #CAB59E; /* Warm parchment for text */
     margin: 0;
     padding: 0;
-    background-color: #ebd8be; /* Dark gray background */
+    background-color: #3B322C; /* Deep brown for background */
 }
 
 /* ✅ Header */
 header {
-    background-color: #e8b6b3; /* Dark brownish shade for the header */
-    color: #575448; /* Light cream for text */
-    padding: 20px;
+    background-color: #2C1E1A; /* Dark chocolate shade for the header */
+    color: #E0D6C6; /* Aged paper tone for text */
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-toggler {
+    position: absolute;
+    left: 20px;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* ✅ Custom text color */
+.text-light {
+    color: #E0D6C6; /* You can set this to any color you prefer */
 }
 
 /* ✅ Bento Box Layout */
@@ -23,7 +45,7 @@ header {
 }
 
 .bento-item {
-    background: #3E3B33; /* Dark brown background for bento items */
+    background: #5A4B3B; /* Muted brown for bento items */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
@@ -35,14 +57,40 @@ header {
 
 /* ✅ Intro Section */
 .intro img {
+    padding-top: 40px; /* Adds space above everything inside .intro */     
     border-radius: 12px;
     max-width: 300px;
     width: 100%;
-    filter: brightness(0.8); /* Slightly darken the image */
-    margin-top: 30px; /* Increased space above the image */
+    filter: brightness(0.8);
+    display: block; /* Ensure it's a block element */
+    margin: 40px auto 0; /* Adds space at the top */
 }
 
+/* ✅ Buttons */
+button {
+    background-color: #8C6954; /* Warm muted brown */
+    color: #E0D6C6; /* Aged paper tone for text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.custom-btn {
+    background-color: #A68A6D; /* Faded gold like the other list items */
+    border-color: #A68A6D;
+    color: #3B322C; /* Dark brown for contrast */
+}
+.custom-btn:hover {
+    background-color: #CAB59E; /* Warm parchment hover effect */
+    border-color: #CAB59E;
+}
 
+button:hover {
+    background-color: #735746; /* Darker brown for hover */
+    transform: scale(1.05);
+}
 
 /* ✅ Cropped Image */
 .cropped-image {
@@ -56,16 +104,21 @@ header {
 
 /* ✅ Footer */
 footer {
-    background-color: #3E3B33; /* Dark brown footer */
-    color: #D1C6B1; /* Soft beige text for footer */
+    background-color: #5A4B3B; /* Dark brown footer */
+    color: #CAB59E; /* Warm parchment text for footer */
     padding: 15px;
 }
 
 /* ✅ Link Colors */
 a {
-    color: #B49775; /* Soft muted gold for links */
+    color: #A68A6D; /* Faded gold for links */
 }
 
 a:hover {
-    color: #F1F1F1; /* Light color for hover effect */
+    color: #E0D6C6; /* Aged paper tone for hover effect */
+}
+
+/* ✅ Specific text color for header and footer */
+header, footer {
+    color: #E0D6C6 !important; /* Force the color to be applied */
 }
