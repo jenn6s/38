@@ -35,4 +35,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // ✅ console log output
-console.log("hello freakbobs 👅👅👅");
+console.log("landons my biggest SUPPORTER <3");
