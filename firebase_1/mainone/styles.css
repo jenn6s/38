@@ -1,0 +1,99 @@
+/* Body & General */
+body {
+  font-family: 'Times New Roman', serif;
+  color: #CAB59E; /* Warm parchment for text */
+  margin: 0;
+  padding: 0;
+  background-color: #3B322C; /* Deep brown for background */
+}
+
+/* Header */
+header {
+  background-color: #2C1E1A; /* Dark chocolate shade for the header */
+  color: #E0D6C6; /* Aged paper tone for text */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Force header text color */
+header, footer {
+  color: #E0D6C6 !important;
+}
+
+/* Center the brand in navbar if needed */
+.navbar-brand {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Login container */
+.login-container {
+  background-color: #5A4B3B;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+/* Bento Box Layout */
+.bento-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 40px; /* Added space between the boxes and the header */
+}
+
+.bento-item {
+  background: #5A4B3B; /* Muted brown for bento items */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bento-item.large {
+  grid-column: span 2;
+}
+
+/* Buttons */
+button {
+  background-color: #8C6954; /* Warm muted brown */
+  color: #E0D6C6; /* Aged paper tone for text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn {
+  background-color: #A68A6D; /* Faded gold like the other list items */
+  border-color: #A68A6D;
+  color: #3B322C; /* Dark brown for contrast */
+}
+.custom-btn:hover {
+  background-color: #CAB59E; /* Warm parchment hover effect */
+  border-color: #CAB59E;
+}
+
+button:hover {
+  background-color: #735746; /* Darker brown for hover */
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #5A4B3B; /* Dark brown footer */
+  color: #CAB59E; /* Warm parchment text for footer */
+  padding: 15px;
+}
+
+/* List Group */
+.list-group-item {
+  background-color: #5A4B3B;
+  color: #CAB59E;
+  border: none;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+}
+
+/* Etc. */
