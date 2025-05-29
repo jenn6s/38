@@ -1,121 +1,169 @@
-/* Body & General */
+/* GENERAL THEME */
 body {
-  font-family: 'Times New Roman', serif;
-  color: #CAB59E; /* Warm parchment for text */
+  font-family: "Georgia", serif;
+  background-color: #3e2b23; /* dark brown */
+  color: #f5f0e6; /* soft cream text */
   margin: 0;
   padding: 0;
-  background-color: #3B322C; /* Deep brown for background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
 }
 
-/* Header */
-header {
-  background-color: #2C1E1A; /* Dark chocolate shade for the header */
-  color: #E0D6C6; /* Aged paper tone for text */
-  padding: 20px 0;
-  text-align: center;
+/* NAVIGATION BAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f211b;
+  padding: 10px 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Force header text color */
-header, footer {
-  color: #E0D6C6 !important;
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f5f0e6;
 }
 
-/* Center the brand in navbar if needed */
-.navbar-brand {
-  flex-grow: 1;
-  text-align: center;
+nav .nav-links {
+  display: flex;
+  gap: 20px;
 }
 
-/* Login container */
-.login-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-
-/* Bento Box Layout */
-.bento-box {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 40px; /* Added space between the boxes and the header */
-}
-
-.bento-item {
-  background: #5A4B3B; /* Muted brown for bento items */
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
-}
-
-.bento-item.large {
-  grid-column: span 2;
-}
-
-/* Buttons */
-button {
-  background-color: #8C6954; /* Warm muted brown */
-  color: #E0D6C6; /* Aged paper tone for text */
-  border: none;
-  padding: 10px 20px;
+nav a {
+  color: #f5f0e6;
+  text-decoration: none;
   font-size: 16px;
-  border-radius: 8px;
+  padding: 6px 14px;
+  border: 1px solid #cab59e;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #cab59e;
+  color: #2f211b;
+}
+
+/* CENTERED AUTH BOX */
+.auth-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.auth-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #cab59e;
+}
+
+.auth-container label {
+  display: block;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+  width: 300px;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f5f0e6;
+  color: #2f211b;
+}
+
+.auth-container button {
+  background-color: #a1866f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-.custom-btn {
-  background-color: #A68A6D; /* Faded gold like the other list items */
-  border-color: #A68A6D;
-  color: #3B322C; /* Dark brown for contrast */
-}
-.custom-btn:hover {
-  background-color: #CAB59E; /* Warm parchment hover effect */
-  border-color: #CAB59E;
+.auth-container button:hover {
+  background-color: #cab59e;
+  color: #2f211b;
 }
 
-button:hover {
-  background-color: #735746; /* Darker brown for hover */
+/* AUTH MESSAGE */
+#auth-message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* FOOTER BUTTONS ON LOGIN PAGE */
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.footer-buttons button {
+  width: 220px;
+  margin: 5px 0;
+  background-color: #5c4433;
+  color: #f5f0e6;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.footer-buttons button:hover {
+  background-color: #cab59e;
+  color: #2f211b;
+}
+
+/* IMAGES SIZED BIGGER */
+.left-images img,
+.right-images img {
+  width: 200px; /* increased width */
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.left-images img {
+  aspect-ratio: 7 / 11; /* taller aspect ratio */
+}
+
+.right-images img {
+  aspect-ratio: 7 / 8.5; /* slightly shorter */
+}
+
+.left-images img:last-child,
+.right-images img:last-child {
+  margin-bottom: 0; /* no margin after last image */
+}
+
+.left-images img:hover,
+.right-images img:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
-footer {
-  background-color: #5A4B3B; /* Dark brown footer */
-  color: #CAB59E; /* Warm parchment text for footer */
-  padding: 15px;
-  margin-top: 40px;  /* Add this line */
+/* Adjust content margin to avoid overlap with bigger images */
+.content {
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 220px; /* increased from 140px to allow more space */
 }
-
-
-/* List Group */
-.list-group-item {
-  background-color: #5A4B3B;
-  color: #CAB59E;
-  border: none;
-  margin-bottom: 5px;
-  padding: 10px 15px;
-}
-
-/* Etc. */
-#land-image {
-  display: block;
-  margin: 40px auto 20px auto;
-  max-width: 90%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-}
-
-@media (max-width: 768px) {
-  .bento-box {
-    grid-template-columns: 1fr;
-  }
-
-  .bento-item.large {
-    grid-column: span 1;
-  }
-}
-
-
